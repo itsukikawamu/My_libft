@@ -1,19 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   pad_char.c                                         :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ikawamuk <ikawamuk@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/05 01:09:22 by ikawamuk          #+#    #+#             */
-/*   Updated: 2025/05/06 10:37:56 by ikawamuk         ###   ########.fr       */
+/*   Created: 2025/04/29 03:02:19 by ikawamuk          #+#    #+#             */
+/*   Updated: 2025/05/06 13:35:34 by ikawamuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf_output.h"
+#include "libft.h"
 
-void	pad_char(char c, int len)
+int	ft_putchar_fd(char c, int fd)
 {
-	while (len-- > 0)
-		ft_putchar(c);
+	if (write(fd, &c, 1) == -1)
+		return (-1);
+	return (0);
 }
+
+/*
+int main(void)
+{
+	ft_putchar_fd('A', 1);
+}
+*/

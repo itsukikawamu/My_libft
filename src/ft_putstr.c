@@ -1,26 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   print_percent.c                                    :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ikawamuk <ikawamuk@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/06 10:12:11 by ikawamuk          #+#    #+#             */
-/*   Updated: 2025/05/06 10:33:49 by ikawamuk         ###   ########.fr       */
+/*   Created: 2025/05/05 01:11:02 by ikawamuk          #+#    #+#             */
+/*   Updated: 2025/05/06 13:36:03 by ikawamuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf_output.h"
+#include "libft.h"
 
-int	print_percent(t_spec spec)
+int	ft_putstr(char 	*s)
 {
-	if (spec.flag & LEFT_JUST)
-		ft_putchar('%');
-	if (!(spec.flag & LEFT_JUST) && spec.flag & ZERO_PADD)
-		pad_char('0', spec.width - 1);
-	else
-		pad_char(' ', spec.width - 1);
-	if 	(!(spec.flag & LEFT_JUST))
-		ft_putchar('%');
-	return (1);
+	if (write(1, s, ft_strlen(s)) == -1)
+		return (-1);
+	return (0);
 }
