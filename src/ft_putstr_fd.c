@@ -6,7 +6,7 @@
 /*   By: ikawamuk <ikawamuk@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 05:57:00 by ikawamuk          #+#    #+#             */
-/*   Updated: 2025/05/06 13:38:33 by ikawamuk         ###   ########.fr       */
+/*   Updated: 2025/05/11 09:19:41 by ikawamuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_putstr_fd(char *s, int fd)
 {
 	if (!s)
-		return ;
+		return (0);
 	while (*s)
 	{
 		if (ft_putchar_fd(*s++, fd) == -1)
