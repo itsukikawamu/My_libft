@@ -3,17 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ikawamuk <ikawamuk@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ikawamuk <ikawamuk@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 04:31:25 by ikawamuk          #+#    #+#             */
-/*   Updated: 2025/04/30 16:23:56 by ikawamuk         ###   ########.fr       */
+/*   Updated: 2025/05/11 12:24:35 by ikawamuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-int	ft_isupper(int c);
-int	ft_islower(int c);
 
 int	ft_isalpha(int c)
 {

@@ -3,16 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ikawamuk <ikawamuk@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ikawamuk <ikawamuk@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/28 10:58:34 by ikawamuk          #+#    #+#             */
-/*   Updated: 2025/04/30 16:24:27 by ikawamuk         ###   ########.fr       */
+/*   Updated: 2025/05/11 12:17:53 by ikawamuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcpy(char *dest, const char *src);
 char	*ft_strcat(char *dest, const char *src);
 
 char	*ft_strjoin(char const *s1, char const *s2)
@@ -45,19 +44,5 @@ char	*ft_strcat(char *dest, const char *src)
 		i++;
 	}
 	dest[dest_len + i] = '\0';
-	return (dest);
-}
-
-char	*ft_strcpy(char *dest, const char *src)
-{
-	size_t	i;
-
-	i = 0;
-	while (src[i])
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
 	return (dest);
 }

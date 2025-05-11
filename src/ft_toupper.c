@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ikawamuk <ikawamuk@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ikawamuk <ikawamuk@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/27 13:20:06 by ikawamuk          #+#    #+#             */
-/*   Updated: 2025/04/30 13:01:32 by ikawamuk         ###   ########.fr       */
+/*   Updated: 2025/05/11 12:24:06 by ikawamuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-int	ft_islower(int c);
 
 int	ft_toupper(int c)
 {
@@ -21,12 +19,6 @@ int	ft_toupper(int c)
 	return (c);
 }
 
-int	ft_islower(int c)
-{
-	if ('a' <= c && c <= 'z')
-		return (FT_ISLOWER);
-	return (0);
-}
 /*
 #include <stdio.h>
 #include <assert.h>

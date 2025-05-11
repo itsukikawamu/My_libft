@@ -1,23 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ikawamuk <ikawamuk@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/28 09:21:41 by ikawamuk          #+#    #+#             */
-/*   Updated: 2025/05/11 12:16:42 by ikawamuk         ###   ########.fr       */
+/*   Created: 2025/05/11 12:17:10 by ikawamuk          #+#    #+#             */
+/*   Updated: 2025/05/11 12:17:27 by ikawamuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
 
-char	*ft_strdup(const char *s)
+char	*ft_strcpy(char *dest, const char *src)
 {
-	char	*rev;
+	size_t	i;
 
-	rev = ft_calloc(ft_strlen(s) + 1, sizeof(char));
-	if (rev == NULL)
-		return (NULL);
-	return ((char *)ft_strcpy(rev, s));
+	i = 0;
+	while (src[i])
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	dest[i] = '\0';
+	return (dest);
 }

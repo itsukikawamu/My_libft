@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ikawamuk <ikawamuk@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ikawamuk <ikawamuk@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/28 08:00:55 by ikawamuk          #+#    #+#             */
-/*   Updated: 2025/04/30 13:09:34 by ikawamuk         ###   ########.fr       */
+/*   Updated: 2025/05/11 12:17:38 by ikawamuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 int			ft_isspace(int c);
 static int	issign(int c);
-char		*ft_strcpy(char *dest, const char *src);
 
 int	ft_atoi(const char *nptr)
 {
@@ -65,19 +64,6 @@ int	ft_isspace(int c)
 	return (0);
 }
 
-char	*ft_strcpy(char *dest, const char *src)
-{
-	size_t	i;
-
-	i = 0;
-	while (src[i])
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
-	return (dest);
-}
 /*s
 #include <stdlib.h>
 int main(void)

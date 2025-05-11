@@ -3,29 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ikawamuk <ikawamuk@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ikawamuk <ikawamuk@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/27 13:29:02 by ikawamuk          #+#    #+#             */
-/*   Updated: 2025/04/30 13:01:35 by ikawamuk         ###   ########.fr       */
+/*   Updated: 2025/05/11 12:23:48 by ikawamuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-int	ft_isupper(int c);
 
 int	ft_tolower(int c)
 {
 	if (ft_isupper(c))
 		c -= ('A' - 'a');
 	return (c);
-}
-
-int	ft_isupper(int c)
-{
-	if ('A' <= c && c <= 'Z')
-		return (FT_ISUPPER);
-	return (0);
 }
 
 /*
