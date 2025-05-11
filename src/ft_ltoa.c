@@ -6,7 +6,7 @@
 /*   By: ikawamuk <ikawamuk@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/28 22:42:13 by ikawamuk          #+#    #+#             */
-/*   Updated: 2025/05/06 11:53:21 by ikawamuk         ###   ########.fr       */
+/*   Updated: 2025/05/11 12:42:16 by ikawamuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,11 +45,12 @@ static void	make_numstr(long nbr, char *arr, size_t size)
 		tmp = n % 10;
 		if (tmp < 0)
 			tmp = -tmp;
-		arr[--size] = '0' + tmp;
+		arr[size] = '0' + tmp;
 		n /= 10;
+		size--;
 	}
 	if (nbr < 0)
-		arr[--size] = '-';
+		arr[size] = '-';
 }
 
 static size_t	count_digits(long n)
