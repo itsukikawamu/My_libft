@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ikawamuk <ikawamuk@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ikawamuk <ikawamuk@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 10:02:06 by ikawamuk          #+#    #+#             */
-/*   Updated: 2025/04/27 15:00:52 by ikawamuk         ###   ########.fr       */
+/*   Updated: 2025/05/11 10:19:48 by ikawamuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ size_t	ft_strlen(const char *s)
 {
 	size_t	len;
 
+	if (!s)
+		return (0);
 	len = 0;
 	while (s[len])
 		len++;
