@@ -6,7 +6,7 @@
 /*   By: ikawamuk <ikawamuk@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 05:57:00 by ikawamuk          #+#    #+#             */
-/*   Updated: 2025/05/11 09:19:41 by ikawamuk         ###   ########.fr       */
+/*   Updated: 2025/05/11 10:28:02 by ikawamuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ int	ft_putstr_fd(char *s, int fd)
 		if (ft_putchar_fd(*s++, fd) == -1)
 			return (-1);
 	}
+	return (0);
 }
 
 /*
