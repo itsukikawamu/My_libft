@@ -6,13 +6,13 @@
 /*   By: ikawamuk <ikawamuk@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 01:11:02 by ikawamuk          #+#    #+#             */
-/*   Updated: 2025/05/11 10:23:25 by ikawamuk         ###   ########.fr       */
+/*   Updated: 2025/05/11 16:42:57 by ikawamuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_putstr(char 	*s)
+int	ft_putstr(char *s)
 {
 	if (!s)
 		return (0);

@@ -6,7 +6,7 @@
 /*   By: ikawamuk <ikawamuk@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 07:32:06 by ikawamuk          #+#    #+#             */
-/*   Updated: 2025/05/11 10:59:50 by ikawamuk         ###   ########.fr       */
+/*   Updated: 2025/05/11 16:43:14 by ikawamuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,4 +23,3 @@ size_t	ft_strnlen(const char *s, size_t maxlen)
 		len = maxlen;
 	return (len);
 }
-
