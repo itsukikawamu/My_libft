@@ -6,18 +6,18 @@
 /*   By: ikawamuk <ikawamuk@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 10:02:06 by ikawamuk          #+#    #+#             */
-/*   Updated: 2025/05/11 10:23:38 by ikawamuk         ###   ########.fr       */
+/*   Updated: 2025/05/13 00:25:05 by ikawamuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+ssize_t	ft_strlen(const char *s)
 {
-	size_t	len;
+	ssize_t	len;
 
 	if (!s)
-		return (0);
+		return (-1);
 	len = 0;
 	while (s[len])
 		len++;
