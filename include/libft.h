@@ -6,7 +6,7 @@
 /*   By: ikawamuk <ikawamuk@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 07:35:41 by ikawamuk          #+#    #+#             */
-/*   Updated: 2025/05/11 10:27:29 by ikawamuk         ###   ########.fr       */
+/*   Updated: 2025/05/13 13:21:09 by ikawamuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 # include <stdint.h>
 # include <assert.h>
 # include <unistd.h>
+# include "ft_printf.h"
 
 # define FT_ISUPPER		0x0001
 # define FT_ISLOWER		0x0002
@@ -43,7 +44,7 @@ int		ft_isdigit(int c);
 int		ft_isprint(int c);
 int		ft_isascii(int c);
 int		ft_isalnum(int c);
-size_t	ft_strlen(const char *s);
+ssize_t	ft_strlen(const char *s);
 void	*ft_memset(void *s, int c, size_t n);
 void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
@@ -94,4 +95,5 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 int		ft_putchar(char c);
 int		ft_putstr(char 	*s);
 char	*ft_ltoa(long n);
+
 #endif
