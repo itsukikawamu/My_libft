@@ -1,2 +1,2 @@
 ## libft
-This is the Libft, the first 42 subject.  
+This is the Libft, the first 42 project.  
